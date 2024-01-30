@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/css/index.css">
+        <script src="src/js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swift' - Homepage</title>
+    </head>
+    <body style="background-color:#111111;">
+        <header>
+            <div id="header_bg_title">
+                <iframe id="header_background"></iframe>
+                <button id="header_title" onclick="document.location = 'index.html'">Swift' Peripherals</button>
+            </div>
+            <div id="header_tabs">
+                <button id="header_news_updates" onclick="document.location = 'index.html'" onmouseover="document.getElementById('header_news_updates').style.cursor = 'pointer'; document.getElementById('header_news_updates').style.color = '#919191'" onmouseleave="document.getElementById('header_news_updates').style.color = '#ffffff'"><u>News & Updates</u></button>
+                <button id="header_collections" onclick="document.location = 'pages/default_collections.html'" onmouseover="document.getElementById('header_collections').style.cursor = 'pointer'; document.getElementById('header_collections').style.color = '#919191'" onmouseleave="document.getElementById('header_collections').style.color = '#ffffff'">Collections</button>
+            </div>
+            <div id="header_cart_settings">
+                <div id="header_cart_collection">
+                    <button id="header_cart" onclick="document.location = 'pages/checkout.html'" onmouseover="document.getElementById('header_cart').style.cursor = 'pointer'; document.getElementById('header_cart_boundary').style.visibility = 'visible'; document.getElementById('header_cart_dropdown').style.visibility = 'visible'"></button>
+                    <iframe id="header_cart_boundary" onmouseleave="document.getElementById('header_cart_boundary').style.visibility = 'hidden'; document.getElementById('header_cart_dropdown').style.visibility = 'hidden'"></iframe>
+                    <iframe id="header_cart_dropdown"></iframe>
+                </div>
+                <div id="header_settings_collection">
+                    <button id="header_settings" onclick="document.location = 'pages/settings.html'" onmouseover="document.getElementById('header_settings').style.cursor = 'pointer'; document.getElementById('header_settings_boundary').style.visibility = 'visible'; document.getElementById('header_settings_dropdown').style.visibility = 'visible'"></button>
+                    <iframe id="header_settings_boundary" onmouseleave="document.getElementById('header_settings_boundary').style.visibility = 'hidden'; document.getElementById('header_settings_dropdown').style.visibility = 'hidden'"></iframe>
+                    <iframe id="header_settings_dropdown"></iframe>
+                </div>
+            </div>
+        </header>
+        <main>
+            <video id="body_start_background" autoplay loop muted>
+                <source src="assets/videos/header_background.mp4">
+            </video>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
